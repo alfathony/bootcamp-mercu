@@ -18,7 +18,7 @@ a{
 }
 
 nav{
-    background: #1A2D43;
+    background: #0c6ad6;
     color: white;
 }
 
@@ -31,4 +31,12 @@ nav{
 .link-putih{
     color: white;
     padding: 8px;
+}
+
+.pesan span{
+    background: blue;
+    color: white;
+    border-radius: 20px;
+    padding: 4px 8px;
+    font-size: 10px;
 }
