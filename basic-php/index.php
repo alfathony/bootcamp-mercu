@@ -138,22 +138,21 @@ $pendidikan =
 <h4>For</h4>
 
 <?php
+    // coba ganti ganti nilai variabel nya
     $batasNilaiTerakhir = 20;
-    $kelipatan2 = 2;
-
-    $batasTengah = 10;
+    $batasTengah = $batasNilaiTerakhir/2;
 
     for ($i=1; $i <= $batasNilaiTerakhir; $i++) { 
         
-        if ($i <= 10) {
+        if ($i <= $batasTengah) {
             for ($a=1; $a <= $i; $a++) { 
                 echo "<div class='box'> $a </div>";
             }
         }else{
-            for ($a=1; $a <= $i-$kelipatan2; $a++) { 
+            for ($a=1; $a <= $batasTengah-1; $a++) { 
                 echo "<div class='box'> $a </div>";
             }
-            $kelipatan2 = $kelipatan2+2;
+            $batasTengah--;
         }
 
         echo "<br>";
